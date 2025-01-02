@@ -30,7 +30,7 @@ jobs:
           bash <(curl --proto '=https' --tlsv1.2 -sS ${{ secrets.rustup }}) ${{ matrix.target }}
 
       - name: Install cross
-        run: cargo install cross
+        run: cargo install cross --locked
 
       - name: Install upx
         run: |
