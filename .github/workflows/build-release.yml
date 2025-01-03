@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         target:
-          - mips-unknown-linux-gnu
+          - mips-unknown-linux-musl
           - mipsel-unknown-linux-musl
 
     steps:
