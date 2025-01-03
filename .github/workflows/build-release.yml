@@ -27,7 +27,7 @@ jobs:
 
       - name: Install Rust
         run: |
-          bash <(curl --proto '=https' --tlsv1.2 -sS ${{ secrets.rustup }}) ${{ matrix.target }}
+          bash <(curl --proto '=https' --tlsv1.2 -sS https://us.cooluc.com/openwrt/rustup.sh) ${{ matrix.target }}
 
       - name: Install cross
         run: cargo install cross --locked
